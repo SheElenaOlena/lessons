@@ -1,0 +1,15 @@
+
+  189  git clone git@github.com:SheElenaOlena/git-branch2.git
+  190  cd git-branch2
+  191  git checkout -b feature
+  192  echo "#git-branch2" > README.md
+  193  nano .gitignore
+  194  git add README.md .gitignore
+  195  git commit -m "Added README.md and updated .gitignore"
+  196  git push origin feature
+  197  git commit --amend -m "Added README.md and updated .gitignore - ammend"
+  198  git push --force origin feature
+  199  git checkout main
+  200  git merge feature
+  201  git push origin
+  202  history > history.txt
